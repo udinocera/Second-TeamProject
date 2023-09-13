@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.top-nav{
+    color:white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+}
+.top-nav-element{
+    margin-right: 20px;
+}
+.help-section{
+    display: none;
+    color: aliceblue;
+    width: 100vw;
+    height: 400px;
+}
+.help-section.active{
+    display: flex;
+}
+.profile-section{
+    display: none;
+    color: aliceblue;
+    width: 100vw;
+    height: 400px;
+}
+.profile-section.active{
+    display: flex;
+}
+.nav-panel{
+    
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 17px;
+    height: 57px;
+}
+.toggle-button {
+    display: none;
+}
+
+.nav-elements{
+    display: flex;
+    
+}
+
+.nav-extra-menu-button{
+    margin-right: 36px;
+}
+.nav-logo{
+    margin-right: 36px;
+}
+
+.nav-element{
+    margin-left: 20px;
+}
+.nav-extra-menu{
+    position: absolute;
+    top:40px;
+
+    width: calc(4 * calc((100vw - 2 * 7.4218vw - 28px * 11) / 12) + 5 * 28px);
+    height: 100%;
+    display: none;
+    background-color: blue;
+}
+.nav-extra-menu.active {
+    display: flex;
+}
+@media screen and (max-width: 1032px) {
+    .toggle-button {
+        display: block;
+    }
+
+    .nav-elements{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+    
+    .nav-extra-menu-button{
+        display: none;
+    }
+
+    .nav-elements.active {
+        display: flex;
+    }
+
+  
+
+   
+}
