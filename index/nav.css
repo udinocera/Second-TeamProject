@@ -12,7 +12,23 @@ body {
     height: 40px;
 }
 .top-nav-element{
+    cursor: pointer;
     margin-right: 20px;
+}
+#nav-help svg{
+    fill: white;
+    
+    height: 18px;
+    width: 18px;
+}
+#nav-profile svg{
+    stroke: white;
+}
+#top-nav-logo svg{
+    fill: white;
+    
+    height: 40px;
+    width: 40px;
 }
 .help-section{
     display: none;
@@ -53,11 +69,24 @@ body {
 .nav-extra-menu-button{
     margin-right: 36px;
 }
+#nav-extra-menu-button{
+    cursor: pointer;
+    border: none; 
+    background: none; 
+    transform: rotate(90deg);
+}
+#nav-extra-menu-button svg{
+    width: 20px;
+    fill:black;
+    
+}
 .nav-logo{
+    cursor: pointer;
     margin-right: 36px;
 }
 
 .nav-element{
+    cursor: pointer;
     margin-left: 20px;
 }
 .nav-toggle{
@@ -87,6 +116,8 @@ body {
 .nav-extra-menu.active {
     display: flex;
 }
+
+
 @media screen and (max-width: 1032px) {
     .toggle-button {
         display: block;
