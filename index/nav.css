@@ -2,9 +2,19 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+    
+}
+
+.content{
+    height: 1800px;
+    background-color: red;
 }
 
 .top-nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
     color:white;
     display: flex;
     justify-content: flex-end;
@@ -49,13 +59,16 @@ body {
     display: flex;
 }
 .nav-panel{
-    
+   position: fixed;
+   top: 40px;
+    transition: top .5s cubic-bezier(.5,.25,.015,1);
+    width: 100%;
     background-color: white;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 17px;
-    height: 57px;
+    height: 53px;
 }
 .toggle-button {
     display: none;

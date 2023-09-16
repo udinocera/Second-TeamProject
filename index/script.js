@@ -32,3 +32,25 @@ navHelpButton.addEventListener('click', () => {
 navProfileButton.addEventListener('click', () => {
     ProfileSection.classList.toggle('active');
 });
+
+// nav after scroll
+
+const movingElement = document.querySelector('.nav-panel');
+
+function handleScroll() {
+    
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    let newPosition = 0; 
+
+    if (scrollTop > 40) { 
+        newPosition = 0;
+    } else {
+        newPosition = 40;
+    }
+
+    movingElement.style.top = `${newPosition}px`;
+
+}
+
+window.addEventListener('scroll', handleScroll);
