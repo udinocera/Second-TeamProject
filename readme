@@ -1,1 +1,33 @@
 Progetto Team 3
+
+sito da replicare : https://www.ea.com/it-it?setLocale=it-it = eletronic arts
+
+trello : https://trello.com/b/RVEpcjIE/secondo-team-project
+
+team leader : marco bruno
+developers : denis bruno , curtis ducasse , vincenzo federico , sviatoslav larionov , umberto nocera
+
+divisione sito team :
+navbar : curtis ducasse ,  sviatoslav larionov 
+main & header : umberto nocera , denis bruno 
+footer : vincenzo federico , marco bruno
+
+branch github: master , centro , nav , footer
+
+palette colori : 
+#ff4648 rosso
+#0cf468 verde
+#ffffff bianco (card)
+#161616 nero
+#f3f3f3 bianco (sfondo)
+
+utilizzati:
+javascript 
+html
+css
+
+sintassi:
+camelCase (js-html)
+
+
+
