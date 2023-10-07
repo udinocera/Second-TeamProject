@@ -1,1 +1,58 @@
 @import url('../style/root.css');
+.newGameBody{
+width: 100%;
+box-sizing: border-box;
+}
+
+#sfondoHaaland{
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
+
+.fifa24Text{
+    z-index: 1;
+    z-index: 0;
+    text-align: center;
+    position:absolute;
+    top: 60px;
+    color: white;
+    
+}
+
+#logoFC{
+    width: 20%;
+    
+}
+
+#titleEA{
+    font-size: 40px;
+    width: 50%; 
+    
+    
+}
+
+#paragraphEA{
+    width: 50%;
+    
+    font-size: large;
+}
+
+#buttonFC{
+  background-color: #0cf468;
+  padding: 20px 40px;
+  font-size: 20px;
+  border-radius: 40px;
+  color: #161616;
+  text-decoration: none;
+
+}
+
+#giochiEvidenza{
+    text-align: center;
+    font-size: 35px;
+}
+
+
+
+
