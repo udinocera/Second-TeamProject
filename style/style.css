@@ -53,6 +53,24 @@ box-sizing: border-box;
     font-size: 35px;
 }
 
+.featuredGames{
+    margin-top: 50px;
+}
+
+.featuredGamesCard{
+    display: grid;
+    grid: repeat(2, 370px) / auto-flow 370px;
+    margin-left: 205px; 
+}
+
+.foto-card{
+    z-index: -1;
+}
+
+.logo{
+z-index: 0;
+}
+
 
 
 
