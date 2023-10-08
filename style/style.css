@@ -1,1 +1,226 @@
-@import url('../style/root.css');
+@import url('./root.css');
+
+@font-face {
+    font-family: "EA-Regular";
+    src: url(../Assets/fonts/ElectronicArtsText-Regular.woff2);
+}
+
+@font-face {
+    font-family: "EA-Bold";
+    src: url(../Assets/fonts/ElectronicArtsText-Bold.woff2);
+}
+
+@font-face {
+    font-family: "EA-Display";
+    src: url(../Assets/fonts/ElectronicArtsDisplay-Bold.woff2);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--clr-sfondo);
+}
+
+.title-section{
+    font-family: "EA-Display", Verdana, Helvetica, sans-serif; 
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.latestNews{
+    font-family: "EA-Regular", Verdana, Helvetica, sans-serif; 
+}
+
+.newsSelector {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08); 
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.newsSelector div{
+    transition: background-color 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.newsSelector div:hover{
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.active::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background-color: var(--clr-rosso);
+    z-index: 2;
+}
+
+.newsSelector button{
+    font-family: "EA-Regular", Verdana, Helvetica, sans-serif; 
+    font-size: 18px;
+    border: none;
+    padding: 0px 15px;
+    margin: 15px 0px;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.newsSelector .btn-EA{
+    border-left: none;
+}
+
+.newsSelector .btn-NFS{
+    border-right: none;
+}
+
+.newsCard{
+    width: 350px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
+    background-color: var(--clr-white);
+    transition: transform 0.4s ease-in-out;
+}
+
+.newsCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.7);
+}
+
+.newsCard a{
+    text-decoration: none;
+    color: var(--clr-black);
+}
+
+.newsCard h3 {
+    font-family: "EA-Bold", Verdana, Helvetica, sans-serif; 
+    font-size: 24px;
+    margin: 6px 0px 0px ;
+}
+
+.newsCard p{
+    color: var(--clr-black);
+    font-size: 16px;
+    margin: 0;
+}
+
+.newsCard span{
+    color: var(--clr-rosso);
+    margin: 0px 16px 0px 0px;
+}
+
+.newsFC24 .newsCard .latestNewsCardText p:nth-child(1){
+    color: var(--clr-rosso);
+}
+
+.newsNFS .newsCard .latestNewsCardText p:nth-child(1){
+    color: var(--clr-rosso);
+}
+
+.latestNewsCardText p:nth-child(3){
+    font-size: 18px;
+    margin: 6.3px 0px 0px;
+}
+
+.newsCard img{
+    width: 350px;
+    
+}
+
+.latestNewsCardText{
+    padding: 24px;
+    height: 320px;
+}
+
+.latestNews{
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: var(--clr-sfondo);
+}
+
+
+.newsEA, .newsFC24, .newsApex, .newsTheSims, .newsStarWars, .newsF1, .newsBattlefield, .newsNFS {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+}
+
+.invisible {
+    display: none;
+}
+
+.newsBtnDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 10vh;
+}
+
+.newsBtn, .parentalToolsBtn{
+    padding: 12px 24px;
+    text-decoration: none;
+    color: var(--clr-black);
+    border: 2px solid var(--clr-black);
+    border-radius: 5%;
+    transition: all 0.1s ease;
+    font-size: 18px;
+}
+
+.newsBtn:hover, .parentalToolsBtn:hover{
+    padding: 15px 27px;
+}
+
+.EaPlay{
+    font-family: "EA-Regular", Verdana, Helvetica, sans-serif; ;
+}
+
+.EaPlayText{
+    color: var(--clr-white);
+    padding: 120px 0px 120px 150px;
+    background: no-repeat center/cover url("../Assets/img/hero-medium-console-7x2-xl.jpg.adapt.crop2x1.1023w.jpg");
+}
+
+.EaPlayText h3{
+    margin: 0;
+    margin-bottom: 21px;
+    font-size: 18px;
+}
+
+.EaPlayBtn {
+    padding: 12px 24px;
+    text-decoration: none;
+    color: var(--clr-white);
+    border: 2px solid var(--clr-white);
+    border-radius: 5%;
+    transition: all 0.1s ease;
+    font-size: 18px;
+}
+
+.EaPlayBtn:hover{
+    padding: 15px 27px;
+}
+
+.parentalTools{
+    padding: 0px 150px;
+    background: no-repeat center/cover #6faada;
+    color: var(--clr-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 800px; */
+}
+
+.parentalTools h3{
+    font-family: "EA-Display", Verdana, Helvetica, sans-serif; 
+    font-size: 24px;
+}
