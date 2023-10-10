@@ -1,0 +1,36 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.containerImgFooter{
+    display: inline;
+    width: 1px;
+    height: 1px;
+}
+
+.primoMenuFooter{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: #161616;
+    font-family:Verdana, Arial, Helvetica, sans-serif, Tahoma, sans-serif;
+    font-size: var(--ea-theme-b2-font-size-mobile);
+    line-height: var(--ea-theme-b2-line-height-mobile);
+    text-decoration: none;
+    padding: 4%;
+}
+
+li:hover{
+
+    color: #ff4648;
+
+}
+
+footer{
+    display: inline-block;
+    background-color: #f3f3f3;
+    padding: 0%;
+    margin: 0%;
+    
+}
