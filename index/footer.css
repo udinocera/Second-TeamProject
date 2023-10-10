@@ -3,26 +3,21 @@
   padding: 0%;
 }
 
-ul {
-    margin-left: 20px;
-}
-
 .primoMenuFooter {
   display: flex;
   list-style: none;
   color: #161616;
   font-family: Verdana, Arial, Helvetica, sans-serif, Tahoma, sans-serif;
   text-decoration: none;
-  
   padding: 4%;
   margin-left: 300px;
   margin-right: 350px;
   margin-bottom: 70px;
+  width: 25%;
+  align-items: center;
 }
 
 .grassetto {
-  display: inline-block;
-  list-style: none;
   color: #161616;
   font-family: Verdana, Arial, Helvetica, sans-serif, Tahoma, sans-serif;
   margin-top: 80px;
@@ -30,24 +25,23 @@ ul {
 }
 
 #partefinale {
-
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 img {
-    margin-top: 20px;
-    margin-right: 25px;
-    
+  margin-top: 20px;
+  margin-right: 25px;
 }
 
 img:hover {
-    transform: scale(1.4);
-
+  transform: scale(1.4);
 }
 
 li {
-    margin-left: 48px;
-    font-size: 14px;
+  margin-left: 40px;
+  font-size: 14px;
+  display: inline;
+  white-space: nowrap;
 }
 
 li:hover {
@@ -59,6 +53,4 @@ footer {
   background-color: #f3f3f3;
   width: 100%;
   text-align: center;
-  
 }
-
