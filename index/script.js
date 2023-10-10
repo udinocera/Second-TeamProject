@@ -36,21 +36,18 @@ navProfileButton.addEventListener('click', () => {
 // nav after scroll
 
 const movingElement = document.querySelector('.nav-panel');
+let prevScrollY = 0;
 
 function handleScroll() {
-    
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-    let newPosition = 0; 
-
-    if (scrollTop > 40) { 
-        newPosition = 0;
+    if (scrollTop < prevScrollY) {
+        movingElement.style.top = '40px';
     } else {
-        newPosition = 40;
+        movingElement.style.top = '0';
     }
 
-    movingElement.style.top = `${newPosition}px`;
-
+    prevScrollY = scrollTop;
 }
 
 window.addEventListener('scroll', handleScroll);
