@@ -31,6 +31,7 @@
 img {
   margin-top: 20px;
   margin-right: 25px;
+  cursor: pointer;
 }
 
 img:hover {
@@ -42,6 +43,7 @@ li {
   font-size: 14px;
   display: inline;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 li:hover {
