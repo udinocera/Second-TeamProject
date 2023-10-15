@@ -154,7 +154,145 @@ body {
         display: flex;
     }
 
-  
-
-   
 }
+    /* Curtis Css begins here */
+@import url(https://db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
+
+.nav-elements{
+    font-family: "Electronic Arts Text" sans-serif;
+    gap: 15px;
+    font-size: 20px;
+    
+}
+
+.nav-element{
+    font-size:20px;
+}
+
+.nav-games-items {
+    font-size: 17px;
+}
+
+/* Containers display by default */
+
+.nav-games-container{
+    position: absolute;
+    display: none;
+    align-content: center;
+    height:0px;
+    width: 17vw;
+    gap: 30px;
+    top: 60px;
+    background-color: white;
+    opacity: 90%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-radius: 3px;
+}
+
+.nav-experience-container{
+    display: none;
+}
+
+.nav-about-container{
+    display: none;
+}
+
+.nav-commitments-container{
+    display: none;
+}
+
+.nav-resources-container{
+    display: none;
+}
+
+/* Containers displays when hovered */
+
+.nav-element:hover .nav-games-container{
+    
+}
+
+
+.nav-games-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    text-align: center;
+}
+
+.nav-element:hover .nav-experience-container{
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    top: 60px;
+    background-color: white;
+    opacity: 90%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.nav-experience-items{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    text-align: left;
+}
+
+.nav-element:hover .nav-about-container{
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    top: 60px;
+    background-color: white;
+    opacity: 90%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.nav-about-items{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    text-align: left;
+}
+
+.nav-element:hover .nav-commitments-container{
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    top: 60px;
+    background-color: white;
+    opacity: 90%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.nav-commitments-items{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    text-align: left;
+}
+
+.nav-element:hover .nav-resources-container{
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    top: 60px;
+    background-color: white;
+    opacity: 90%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.nav-resources-items{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    text-align: left;
+}
+
+/* Extra nav-bar toggle */
+    
