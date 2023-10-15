@@ -51,3 +51,7 @@ function handleScroll() {
 }
 
 window.addEventListener('scroll', handleScroll);
+
+// Dropdown animations
+
+const gameElements = getElementByClassName
