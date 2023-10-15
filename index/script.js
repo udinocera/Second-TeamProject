@@ -54,4 +54,38 @@ window.addEventListener('scroll', handleScroll);
 
 // Dropdown animations
 
-const gameElements = getElementByClassName
+const navGame = document.getElementsByClassName('nav-game');
+const navGameConteiner = document.getElementsByClassName('nav-games-container')
+
+navGame[0].addEventListener('mouseover', () => {
+    console.log('0')
+    navGameConteiner[0].style.display = 'flex';
+    setTimeout(() => {
+        navGameConteiner[0].style.height = '400px'
+    }, 1000);
+});
+
+// navGame[0].addEventListener('mouseout', () => {
+//     console.log('0')
+//     navGameConteiner[0].style.height = '0px'
+//     setTimeout(() => {
+        
+//         navGameConteiner[0].style.display = 'none';
+//     }, 1000);
+// });
+
+
+navGameConteiner[0].addEventListener('mouseover', () => {
+    console.log('0')
+    navGameConteiner[0].style.display = 'flex';
+    navGameConteiner[0].style.height = '400px';
+});
+
+navGameConteiner[0].addEventListener('mouseout', () => {
+    console.log('0')
+    navGameConteiner[0].style.height = '0px';
+    setTimeout(() => {
+        
+        navGameConteiner[0].style.display = 'none';
+    }, 1000);
+});

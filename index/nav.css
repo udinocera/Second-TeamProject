@@ -158,20 +158,20 @@ body {
     /* Curtis Css begins here */
 @import url(https://db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
 
-.nav-elements{
+/* .nav-elements{
     font-family: "Electronic Arts Text" sans-serif;
     gap: 15px;
     font-size: 20px;
     
-}
+} */
 
-.nav-element{
+/* .nav-element{
     font-size:20px;
-}
+} */
 
-.nav-games-items {
+/* .nav-games-items {
     font-size: 17px;
-}
+} */
 
 /* Containers display by default */
 
@@ -185,9 +185,11 @@ body {
     top: 60px;
     background-color: white;
     opacity: 90%;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    /* padding-bottom: 40px;
+    padding-top: 40px; */
+    overflow: hidden;
     border-radius: 3px;
+    transition: 2s;
 }
 
 .nav-experience-container{
@@ -213,16 +215,16 @@ body {
 }
 
 
-.nav-games-items{
+/* .nav-games-items{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap:30px;
     text-align: center;
-}
+} */
 
-.nav-element:hover .nav-experience-container{
+/* .nav-element:hover .nav-experience-container{
     position: absolute;
     display: flex;
     gap: 30px;
@@ -231,7 +233,7 @@ body {
     opacity: 90%;
     padding-bottom: 40px;
     padding-top: 40px;
-}
+} */
 
 .nav-experience-items{
     display: flex;
@@ -240,7 +242,7 @@ body {
     text-align: left;
 }
 
-.nav-element:hover .nav-about-container{
+/* .nav-element:hover .nav-about-container{
     position: absolute;
     display: flex;
     gap: 30px;
@@ -249,7 +251,7 @@ body {
     opacity: 90%;
     padding-bottom: 40px;
     padding-top: 40px;
-}
+} */
 
 .nav-about-items{
     display: flex;
@@ -258,7 +260,7 @@ body {
     text-align: left;
 }
 
-.nav-element:hover .nav-commitments-container{
+/* .nav-element:hover .nav-commitments-container{
     position: absolute;
     display: flex;
     gap: 30px;
@@ -267,7 +269,7 @@ body {
     opacity: 90%;
     padding-bottom: 40px;
     padding-top: 40px;
-}
+} */
 
 .nav-commitments-items{
     display: flex;
@@ -276,7 +278,7 @@ body {
     text-align: left;
 }
 
-.nav-element:hover .nav-resources-container{
+/* .nav-element:hover .nav-resources-container{
     position: absolute;
     display: flex;
     gap: 30px;
@@ -285,7 +287,7 @@ body {
     opacity: 90%;
     padding-bottom: 40px;
     padding-top: 40px;
-}
+} */
 
 .nav-resources-items{
     display: flex;
