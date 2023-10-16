@@ -117,6 +117,7 @@ body {
   }
 
   .card-gioco{
+    cursor: pointer;
     position: relative;
 	width: 350px;
 	height: 350px;
