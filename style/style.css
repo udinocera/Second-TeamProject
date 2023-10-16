@@ -1,5 +1,20 @@
 @import url('../style/root.css');
 
+@font-face {
+  font-family: "EA-Regular";
+  src: url(../Assets/fonts/ElectronicArtsText-Regular.woff2);
+}
+
+@font-face {
+  font-family: "EA-Bold";
+  src: url(../Assets/fonts/ElectronicArtsText-Bold.woff2);
+}
+
+@font-face {
+  font-family: "EA-Display";
+  src: url(../Assets/fonts/ElectronicArtsDisplay-Bold.woff2);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -33,6 +48,7 @@ body {
 
 
 .fifa24Text{
+  
     
     z-index: 0;
     text-align:center;
@@ -45,16 +61,20 @@ body {
 }
 
 #titleEA{
-    font-size: 40px;
+    font-size: 47px;
+    font-family: "EA-Display";
  
 }
 
 #paragraphEA{
    font-size: 15.5px;
+   padding: 10px;
+   font-family: "EA-Regular";
 }
 
 
 #buttonFC{
+  font-family: "EA-Regular";
   background-color: #0cf468;
   padding: 20px 40px;
   font-size: 20px;
@@ -81,7 +101,7 @@ body {
 }
 
 
-.container{
+.container-carte{
     position: relative;
 	display: flex;
 	justify-content: center;
@@ -91,12 +111,12 @@ body {
    
   }
   
-  .card:hover .overlay{
+  .card-gioco:hover .overlay{
     opacity: 0.8;
     transform: scale(1);
   }
 
-  .card{
+  .card-gioco{
     position: relative;
 	width: 350px;
 	height: 350px;
@@ -104,6 +124,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+  
+  
   }
 
   .logo {
@@ -116,10 +138,11 @@ body {
 
     .logo-2 {
         position: absolute;
-        width: 150px;
-        height: 40px;
-        bottom: 170px;
-        left: 100px;
+       color: white;
+        bottom: 130px;
+        left: 110px;
+        font-size: 20px;
+        font-family: "EA-Display";
     
 }
 
@@ -131,19 +154,21 @@ body {
     left: 115px;
 
 }
-.card:hover .logo{
+
+
+.card-gioco:hover .logo{
 	transform: translateY(-55px);
 	transition: 0.3s;
     opacity: 1;
 }
 
-.card:hover .logo-2{
+.card-gioco:hover .logo-2{
 	transform: translateY(-55px);
 	transition: 0.3s;
     opacity: 1;
 }
 
-.card:hover .logo-3{
+.card-gioco:hover .logo-3{
 	transform: translateY(-85px);
 	transition: 0.3s;
     opacity: 1;
