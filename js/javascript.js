@@ -172,3 +172,25 @@ btnNFS.addEventListener("click", () => {
     newsFC24.setAttribute("id", "invisible")
 });
 
+const initSlider = () => {
+  const slider = document.querySelector(".newsSelector");
+
+  const scrollLeftButton = document.getElementById("scrollLeft");
+
+  scrollLeftButton.addEventListener("click", () => {
+    slider.scrollBy({ left: -100, behavior: "smooth" });
+    erisci;
+  });
+
+  scrollRightButton.addEventListener("click", () => {
+    slider.scrollBy({ left: 100, behavior: "smooth" });
+  });
+
+  const handleSlideButtons = () => {
+    scrollLeftButton.style.opacity = slider.scrollLeft <= 0 ? "0" : "1";
+    scrollRightButton.style.opacity =
+      slider.scrollLeft >= maxScrollLeft ? "0" : "1";
+  };
+
+  handleSlideButtons();
+};
