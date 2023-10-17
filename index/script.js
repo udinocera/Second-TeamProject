@@ -8,7 +8,7 @@ const navHelpButton = document.getElementById('nav-help');
 const helpSection = document.querySelector('.help-section');
 
 const navProfileButton = document.getElementById('nav-profile');
-const ProfileSection = document.querySelector('.profile-section');
+const profileSection = document.querySelector('.profile-section');
 
 // toogleNav
 toggleNavButton.addEventListener('click', () => {
@@ -25,12 +25,14 @@ extraNavButton.addEventListener('click', () => {
 
 navHelpButton.addEventListener('click', () => {
     helpSection.classList.toggle('active');
+    profileSection.classList.remove('active');
 });
 
 // Profile
 
 navProfileButton.addEventListener('click', () => {
-    ProfileSection.classList.toggle('active');
+    profileSection.classList.toggle('active');
+    helpSection.classList.remove('active');
 });
 
 // nav after scroll
@@ -52,40 +54,15 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll);
 
-// Dropdown animations
-/*
-const navGame = document.getElementsByClassName('nav-game');
-const navGameConteiner = document.getElementsByClassName('nav-games-container')
 
-navGame[0].addEventListener('mouseover', () => {
-    console.log('0')
-    navGameConteiner[0].style.display = 'flex';
-    setTimeout(() => {
-        navGameConteiner[0].style.height = '400px'
-    }, 1000);
-});
+//CLOSE MENU BUTTON
+const closeMenuButton = document.querySelectorAll('#close-menu-button');
 
-// navGame[0].addEventListener('mouseout', () => {
-//     console.log('0')
-//     navGameConteiner[0].style.height = '0px'
-//     setTimeout(() => {
+closeMenuButton.forEach(button => {
+    button.addEventListener('click', () => {
+        profileSection.classList.remove('active');
+        helpSection.classList.remove("active");
+        navExtraMenu.classList.remove("active");
         
-//         navGameConteiner[0].style.display = 'none';
-//     }, 1000);
-// });
-
-
-navGameConteiner[0].addEventListener('mouseover', () => {
-    console.log('0')
-    navGameConteiner[0].style.display = 'flex';
-    navGameConteiner[0].style.height = '400px';
+    });
 });
-
-navGameConteiner[0].addEventListener('mouseout', () => {
-    console.log('0')
-    navGameConteiner[0].style.height = '0px';
-    setTimeout(() => {
-        
-        navGameConteiner[0].style.display = 'none';
-    }, 1000);
-}); */
