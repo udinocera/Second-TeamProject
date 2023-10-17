@@ -315,10 +315,15 @@ body{
           color: white;
         position: absolute;
         max-width: 30%;
-        top: 50px;
+        top: 30px;
         left: 150px;
         
           
+      }
+
+      #logoFC{
+        position: relative;
+        top: 20px;
       }
       
       #titleEA{
@@ -344,7 +349,7 @@ body{
         color: #161616;
         text-decoration: none;
         position: relative;
-        bottom: 10px;
+        
       
       }
       
@@ -358,7 +363,7 @@ body{
           text-align: center;
           font-size: 35px;
         margin-top: 20px;
-          top: 20px;
+          top: 35px;
           
       }
       
