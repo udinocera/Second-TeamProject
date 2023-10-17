@@ -148,6 +148,7 @@ body {
 }
 .help-head{
     align-self: center;
+    font-weight: bold;
 }
 .help-head b{
     font-size: 18px;

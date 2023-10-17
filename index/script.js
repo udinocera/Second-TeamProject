@@ -25,12 +25,14 @@ extraNavButton.addEventListener('click', () => {
 
 navHelpButton.addEventListener('click', () => {
     helpSection.classList.toggle('active');
+    profileSection.classList.remove('active');
 });
 
 // Profile
 
 navProfileButton.addEventListener('click', () => {
     profileSection.classList.toggle('active');
+    helpSection.classList.remove('active');
 });
 
 // nav after scroll
