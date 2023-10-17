@@ -1,32 +1,4 @@
-@import url('../style/root.css');
 
-@font-face {
-  font-family: "EA-Regular";
-  src: url(../Assets/fonts/ElectronicArtsText-Regular.woff2);
-}
-
-@font-face {
-  font-family: "EA-Bold";
-  src: url(../Assets/fonts/ElectronicArtsText-Bold.woff2);
-}
-
-@font-face {
-  font-family: "EA-Display";
-  src: url(../Assets/fonts/ElectronicArtsDisplay-Bold.woff2);
-}
-
-* {
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	min-height: 100vh;
-}
 
 .fifa24{
 	width: 100%;
@@ -68,12 +40,11 @@ body {
 
 #paragraphEA{
    font-size: 15.5px;
-   padding: 10px;
    font-family: "EA-Regular";
 }
 
 
-#buttonFC{
+#buttonFC-body{
   font-family: "EA-Regular";
   background-color: #0cf468;
   padding: 20px 40px;
@@ -82,7 +53,7 @@ body {
   color: #161616;
   text-decoration: none;
   position: relative;
-  top: 35px;
+  top: 5px;
 
 }
 
