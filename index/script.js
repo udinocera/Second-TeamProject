@@ -53,7 +53,7 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 
 // Dropdown animations
-
+/*
 const navGame = document.getElementsByClassName('nav-game');
 const navGameConteiner = document.getElementsByClassName('nav-games-container')
 
@@ -88,4 +88,4 @@ navGameConteiner[0].addEventListener('mouseout', () => {
         
         navGameConteiner[0].style.display = 'none';
     }, 1000);
-});
+}); */
