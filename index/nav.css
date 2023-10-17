@@ -40,24 +40,8 @@ body {
     height: 40px;
     width: 40px;
 }
-.help-section{
-    display: none;
-    color: aliceblue;
-    width: 100vw;
-    height: 400px;
-}
-.help-section.active{
-    display: flex;
-}
-.profile-section{
-    display: none;
-    color: aliceblue;
-    width: 100vw;
-    height: 400px;
-}
-.profile-section.active{
-    display: flex;
-}
+
+
 .nav-panel{
    position: fixed;
    top: 40px;
@@ -129,7 +113,103 @@ body {
 .nav-extra-menu.active {
     display: flex;
 }
+#close-menu-button{
+    fill:white;
+    height: 13px;
+    width: 13px;
+    align-self: flex-end;
+    margin-right: 40px;
+    cursor: pointer;
+    z-index: 23;
+    position: relative;
+}
 
+.help-section{
+    display: none;
+    color: aliceblue;
+    width: 100vw;
+    height: 400px;
+    z-index: 15;
+    position: absolute;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    top: 40px;
+}
+.help-section.active{
+    
+    display: flex;
+}
+
+.help-section-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.help-head{
+    align-self: center;
+}
+.help-head b{
+    font-size: 18px;
+}
+.help-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.help-content-element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-wrap: wrap;
+    width: 304px;
+}
+.help-content img{
+    width: 36px;
+    height: 36px;
+}
+.help-content span{
+    line-height: 1.35;
+    padding: 0 0 0 0.5em;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+.profile-section{
+    display: none;
+    color: aliceblue;
+    width: 100vw;
+    height: 400px;
+    z-index: 10;
+    position: absolute;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    top: 40px;
+    align-items: center;
+}
+.profile-section.active{
+    display: flex;
+}
+
+.profile-body{
+    display: flex;
+    flex-direction: row;
+    
+}
+.profile-element{
+    width: 304px;
+    display: flex;
+    align-items: center;
+}
+.profile-element img{
+    width: 36px;
+    height: 36px;
+}
 
 @media screen and (max-width: 1032px) {
     .toggle-button {

@@ -8,7 +8,7 @@ const navHelpButton = document.getElementById('nav-help');
 const helpSection = document.querySelector('.help-section');
 
 const navProfileButton = document.getElementById('nav-profile');
-const ProfileSection = document.querySelector('.profile-section');
+const profileSection = document.querySelector('.profile-section');
 
 // toogleNav
 toggleNavButton.addEventListener('click', () => {
@@ -30,7 +30,7 @@ navHelpButton.addEventListener('click', () => {
 // Profile
 
 navProfileButton.addEventListener('click', () => {
-    ProfileSection.classList.toggle('active');
+    profileSection.classList.toggle('active');
 });
 
 // nav after scroll
@@ -51,3 +51,16 @@ function handleScroll() {
 }
 
 window.addEventListener('scroll', handleScroll);
+
+
+//CLOSE MENU BUTTON
+const closeMenuButton = document.querySelectorAll('#close-menu-button');
+
+closeMenuButton.forEach(button => {
+    button.addEventListener('click', () => {
+        profileSection.classList.remove('active');
+        helpSection.classList.remove("active");
+        navExtraMenu.classList.remove("active");
+        
+    });
+});
