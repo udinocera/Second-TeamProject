@@ -15,24 +15,71 @@ toggleNavButton.addEventListener('click', () => {
     navElements.classList.toggle('active');
 });
 
+let helpButtonActive = false;
+let profileButtonActive = false;
+
 // Extra nav
 
 extraNavButton.addEventListener('click', () => {
     navExtraMenu.classList.toggle('active');
+    document.body.style.overflow = "hidden";
 });
 
 // Help
 
 navHelpButton.addEventListener('click', () => {
-    helpSection.classList.toggle('active');
+    
     profileSection.classList.remove('active');
+
+    setTimeout(() => {
+        helpSection.classList.toggle('active');
+    }, 50);
+    
+
+    helpSection.style.display = 'flex';
+    
+    profileSection.style.display = 'none';
+    profileButtonActive = false;
+    if (helpButtonActive == false) {
+        helpButtonActive = true
+    } else {
+        helpButtonActive = false
+    }
+    document.body.style.overflow = "hidden";
+
+    if (helpButtonActive == false) {
+        document.body.style.overflow = "auto";
+
+        
+    }
 });
 
 // Profile
 
 navProfileButton.addEventListener('click', () => {
-    profileSection.classList.toggle('active');
+    setTimeout(() => {
+        profileSection.classList.toggle('active');
+    }, 50);
+    
     helpSection.classList.remove('active');
+
+    profileSection.style.display = 'flex';
+    helpButtonActive = false;
+   
+    if (profileButtonActive == false) {
+        profileButtonActive = true
+    } else {
+        profileButtonActive = false
+    }
+    document.body.style.overflow = "hidden";
+
+    if (profileButtonActive == false) {
+        document.body.style.overflow = "auto";
+        
+        
+    }
+
+
 });
 
 // nav after scroll
@@ -63,6 +110,24 @@ closeMenuButton.forEach(button => {
         profileSection.classList.remove('active');
         helpSection.classList.remove("active");
         navExtraMenu.classList.remove("active");
+        buttonActive = false;
+        document.body.style.overflow = "auto";
+
         
+    });
+});
+
+// extra button close
+
+const extraButtonClose = document.querySelectorAll('close-menu-button-extra');
+
+extraButtonClose.forEach(button => {
+    button.addEventListener('click', () => {
+        profileSection.classList.remove('active');
+        helpSection.classList.remove("active");
+        navExtraMenu.classList.remove("active");
+        buttonActive = false;
+        document.body.style.overflow = "auto";
+        console.log('ciao')
     });
 });

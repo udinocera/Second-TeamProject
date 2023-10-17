@@ -120,28 +120,43 @@ body {
     fill:white;
     height: 13px;
     width: 13px;
-    align-self: flex-end;
+    
     margin-right: 40px;
     cursor: pointer;
     z-index: 23;
-    position: relative;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+}
+.nav-menu-close-items #close-menu-button{
+    fill:black;
+    height: 16px;
+    width: 16px;
+    
+    
+    cursor: pointer;
+    z-index: 23;
+    position:static;
 }
 
 .help-section{
-    display: none;
+    display: flex;
     color: aliceblue;
     width: 100vw;
-    height: 400px;
+    height: 0px;
+    overflow: hidden;
     z-index: 15;
-    position: absolute;
+    position: fixed;
     background-color: black;
     flex-direction: column;
     justify-content: center;
     top: 40px;
+    transition: 0.5s;
+    
 }
 .help-section.active{
-    
-    display: flex;
+    height: 400px;
 }
 
 .help-section-body{
@@ -184,20 +199,23 @@ body {
 
 
 .profile-section{
-    display: none;
+    display: flex;
+    height: 0px;
     color: aliceblue;
     width: 100vw;
-    height: 400px;
+    /* height: 400px; */
     z-index: 10;
-    position: absolute;
+    position: fixed;
     background-color: black;
     flex-direction: column;
     justify-content: center;
     top: 40px;
     align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
 }
 .profile-section.active{
-    display: flex;
+    height: 400px;
 }
 
 .profile-body{
@@ -209,6 +227,7 @@ body {
     width: 304px;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 .profile-element img{
     width: 36px;
@@ -526,6 +545,7 @@ body {
 
 .nav-extra-menu.active{
     display: flex;
+    overflow-y: auto;
     flex-direction: column;
     justify-content: flex-start;  
     align-items: center;
