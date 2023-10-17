@@ -315,8 +315,9 @@ body{
           color: white;
         position: absolute;
         max-width: 30%;
-        top: 70px;
+        top: 50px;
         left: 150px;
+        
           
       }
       
@@ -328,6 +329,8 @@ body{
       
       #paragraphEA{
          font-size: 15.5px;
+         position: relative;
+         bottom: 25px;
          font-family: "EA-Regular";
       }
       
@@ -341,7 +344,7 @@ body{
         color: #161616;
         text-decoration: none;
         position: relative;
-        top: 5px;
+        bottom: 10px;
       
       }
       
