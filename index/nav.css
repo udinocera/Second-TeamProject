@@ -23,24 +23,36 @@ body {
 }
 .top-nav-element{
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 #nav-help svg{
-    fill: white;
+    fill: #a3a3a3;
     
     height: 18px;
     width: 18px;
 }
 #nav-profile svg{
-    stroke: white;
+    stroke: #a3a3a3;
 }
 #top-nav-logo svg{
-    fill: white;
+    fill: #a3a3a3;
     
     height: 40px;
     width: 40px;
 }
 
+#nav-help svg:hover{
+    fill: #f3f3f3;
+    
+}
+#nav-profile svg:hover{
+    stroke: #f3f3f3;
+}
+#top-nav-logo svg:hover{
+    fill: #dd0000;
+    
+    
+}
 
 .nav-panel{
    position: fixed;
@@ -107,14 +119,17 @@ body {
 .nav-extra-menu{
     position: absolute;
     top:40px;
-
-    width: calc(4 * calc((100vw - 2 * 7.4218vw - 28px * 11) / 12) + 5 * 28px);
+    left: -600px;
+    width: 0px;
+    display: flex;
+    overflow: hidden;
     height: 100%;
-    display: none;
+    transition: 0.5s;
     background-color: white;
 }
 .nav-extra-menu.active {
-    display: flex;
+    left: 0px;
+    width: calc(4 * calc((100vw - 2 * 7.4218vw - 28px * 11) / 12) + 5 * 28px);
 }
 #close-menu-button{
     fill:white;
