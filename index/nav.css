@@ -590,3 +590,56 @@ body {
     width: 16px;
     height: 16px;
 }
+
+.linea {
+    position: relative ;
+    width: 1px;
+    height: 10px;
+    color: black;
+    background-color: black;
+    transform-origin: center bottom;
+    transform: rotate(-45deg);
+    top: 7px;
+    left: 10px;
+    
+  }
+
+  .linea2 {
+    position: relative;
+    width: 1px;
+    height: 10px;
+    color: black;
+    background-color: black;
+    transform-origin: center bottom;
+    transform:  rotate(45deg);
+    top: 7px;
+    left: 10px;
+    
+  }
+
+  .nav-element:hover .linea{
+    transition: transform 0.2s ease-in-out;
+    transform: rotate(-135deg)  ; /* translateY(20px)  */
+    background-color: red;
+  }
+
+  .nav-element:hover .linea2{
+    transition: transform 0.2s ease-in-out;
+    transform: rotate(135deg)  ;  /*translateX(-20px) */
+    background-color: red;
+  }
+
+  .nav-element:not(:hover) .linea{
+    transition: transform 0.2s ease-in-out;
+    transform: rotate(-45deg);
+  }
+
+  .nav-element:not(:hover) .linea2{
+    transition: transform 0.2s ease-in-out;
+    transform: rotate(45deg);
+  }
+ 
+  .linee-container{
+    display: inline;
+    
+  }
