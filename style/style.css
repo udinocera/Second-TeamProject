@@ -1480,3 +1480,10 @@ body {
     fill: black;
     transition: transform 0.4s ease-in-out, fill 0.4s ease-in-out;
 }
+
+.linee-container{
+  height: 20px;
+  width: 20px;
+  display: flex;
+
+}
